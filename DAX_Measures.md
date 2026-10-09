@@ -22,6 +22,7 @@ RETURN
 ```
 ## Comparative BMI Benchmark (vs Avg BMI)
 
+```
 vs Avg BMI = 
 VAR _CurrentBMI = AVERAGE(health_dataset[BMI])
 VAR _OverallBMI = CALCULATE(AVERAGE(health_dataset[BMI]), ALL(health_dataset))
@@ -34,3 +35,4 @@ RETURN
         _Diff < 0, UNICHAR(9660) & " " & FORMAT(_CurrentBMI, "0.0"),
         FORMAT(_CurrentBMI, "0.0")
     )
+```
