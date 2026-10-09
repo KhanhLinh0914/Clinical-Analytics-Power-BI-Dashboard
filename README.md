@@ -7,7 +7,7 @@ An executive-grade, interactive Power BI analytics suite designed to evaluate pa
 This analytics framework evaluates multi-organ cohorts including Heart, Lungs, Kidneys, Liver, and Overall Human Body sliced dynamically by physiological health status Damaged versus Healthy.
 
 
-<img width="1318" height="737" alt="image" src="https://github.com/user-attachments/assets/b7f0b97d-e2a1-4acb-9756-9ff812db48e0" />
+<img width="1218" height="737" alt="image" src="https://github.com/user-attachments/assets/b7f0b97d-e2a1-4acb-9756-9ff812db48e0" />
 
 
 ### Key Clinical Takeaways
@@ -69,11 +69,26 @@ Cardiovascular (Heart): Highly sensitive to weight burden. The distinct BMI gap 
 
 Hepatic (Liver) and Renal (Kidney): Patients with Liver damage (51.7 years average age, BMI 28.6) and Kidney damage (53.9 years average age, BMI 29.3) show noticeably lower BMI figures compared to Heart/Lung cohorts. This delivers a critical clinical insight: Liver and Kidney damage are primarily driven by chemical toxicity (smoking, alcohol, diet) and metabolic filtration overload, rather than physical structural strain from excess adipose mass (BMI).
 
-## Dynamic DAX Measures and Data Modeling
+## Dynamic DAX Measures 
 
 The dashboard relies on custom DAX measures for dynamic cohort benchmarking and context transition overrides using ALL table scope.
 
 Full calculations and formulas are documented separately in [DAX Measures Documentation](DAX_Measures.md).
+
+## Data Architecture and Modeling
+
+The reporting framework utilizes a Star Schema data model designed to optimize filter propagation and support dynamic cross filtering across organ dimensions, health conditions, and clinical metrics.
+
+
+<img width="871" height="687" alt="Screenshot 2026-10-08 231747" src="https://github.com/user-attachments/assets/8218d12e-acff-4e17-9e9a-6c88c7a9cbfb" />
+
+
+### Entity Relationship Details
+
+* Fact Table: `health_dataset` contains patient level clinical telemetry, demographic profiles, smoking intensity indicators, and cardiovascular risk attributes.
+* Dimension Table: `condition` provides normalized organ condition classifications mapped one to many into the central fact dataset.
+* Dimension Table: `Organs` contains standardized organ categorization mapped one to many into the fact table and visual assets.
+* Dynamic Visual Mapping: `Image Dataset` functions as a supporting reference table maintaining dynamic URLs mapped to organ and condition combinations for adaptive report rendering.
 
 ## Clinical Strategy and Preventive Interventions
 
