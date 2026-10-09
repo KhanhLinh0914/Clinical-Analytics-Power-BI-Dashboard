@@ -7,7 +7,7 @@ An executive-grade, interactive Power BI analytics suite designed to evaluate pa
 This analytics framework evaluates multi-organ cohorts including Heart, Lungs, Kidneys, Liver, and Overall Human Body sliced dynamically by physiological health status Damaged versus Healthy.
 
 
-<img width="1350" height="737" alt="Screenshot 2026-10-08 220253" src="https://github.com/user-attachments/assets/8d4b3ee4-c1ad-48d1-8aa3-ddf6c54538c2" />
+<img width="1318" height="737" alt="image" src="https://github.com/user-attachments/assets/b7f0b97d-e2a1-4acb-9756-9ff812db48e0" />
 
 
 ### Key Clinical Takeaways
