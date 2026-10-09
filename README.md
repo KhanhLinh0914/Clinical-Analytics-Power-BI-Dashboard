@@ -6,6 +6,8 @@ An executive-grade, interactive Power BI analytics suite designed to evaluate pa
 
 This analytics framework evaluates multi-organ cohorts including Heart, Lungs, Kidneys, Liver, and Overall Human Body sliced dynamically by physiological health status Damaged versus Healthy.
 
+<img width="1425" height="737" alt="Screenshot 2026-10-08 220253" src="https://github.com/user-attachments/assets/8d4b3ee4-c1ad-48d1-8aa3-ddf6c54538c2" />
+
 ### Key Clinical Takeaways
 
 1. Severe Smoking Prevalence: Over 70% to 78.8% of patients exhibiting organ damage across all primary organ groups have a current or former smoking history.
@@ -29,6 +31,7 @@ This analytics framework evaluates multi-organ cohorts including Heart, Lungs, K
 | Liver | Healthy | 176 | 53.7 Lower | 28.2 Lower | Baseline control group. |
 
 ## Detailed Clinical and Biomarkers Analysis
+
 
 ### 1. Dual Impact of Age and Body Mass Index (BMI)
 
